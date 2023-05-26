@@ -1,0 +1,83 @@
+body {
+    font-size: 1.5rem;
+    padding: .8rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center ;
+    background-size: cover;
+    background-image: url(./IMG/huellitas.jpg)
+}
+
+
+
+.subtitulos {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+
+
+.texto {
+    
+    padding-left: 15px;
+    color: black;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.titulo {
+    
+    color: black;
+}
+
+
+
+header{
+    
+    display: flex;
+    height: 70px;
+    background-color: rgb(192, 149, 174);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    width: 10px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contenedor{
+
+    
+    display: flex;
+    padding-left: 10px;
+
+}
+
+nav{
+    
+    padding: 10px;
+}
+
+
+.foto {
+    
+    
+    border-width: 10px;
+    border-style: solid;
+    border-color:rgb(135, 153, 255)
+
+}
+
