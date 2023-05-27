@@ -14,15 +14,13 @@ body {
     font-size: 40px;
     color: black;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
 
 
-h1{
-    color: black;
-    text-align: center;
-}
+
 
 
 
@@ -35,18 +33,19 @@ h1{
 
 }
 
-.titulo {
+.titulo{
     
-    color: black;
+    color: aliceblue;
 }
 
 
 
+
+
 header{
-    
+    background-color: rgb(192, 149, 174);
     display: flex;
     height: 70px;
-    background-color: rgb(192, 149, 174);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -66,9 +65,24 @@ header{
 
 }
 
-nav{
+.nav{
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+
     
-    padding: 10px;
+    
+}
+
+.nav:hover{
+    transition:0.3s;
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 5px;
+    
 }
 
 
