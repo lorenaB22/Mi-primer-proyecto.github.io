@@ -11,14 +11,19 @@ body {
 
 
 .subtitulos {
-    font-size: 40px;
+    /*font-size: 40px; ---- con este metodo le das el tamaño a toda esta clase , por eso no habia diferencia entre h2 y h3*/
     color: black;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
-
+.titulo{
+    display: flex;/* para que los elementos se pongan uno al lado del otro*/
+    align-items: center;/* para que se aliñen los elementos verlicalmente */
+    margin:10px ; /* aca le das la distancia a las patitas con el titulo si queres mas lejo aumentas la numeracion*/
+    color: aliceblue;
+}
 
 
 
@@ -33,10 +38,7 @@ body {
 
 }
 
-.titulo{
-    
-    color: aliceblue;
-}
+
 
 
 
@@ -80,10 +82,13 @@ header{
 .nav:hover{
     transition:0.3s;
     display: inline-block;
-    text-decoration: underline; /* para que te aparesca el surrayado */
+    text-decoration: underline;/* --- para que te aparesca el surrayado, si les parece mucho eliminar y listo */
+    background-color: aliceblue;
     border-radius: 15px;
 }
-
+a:hover{
+    color: rgb(238, 148, 148);/*para cambiar el color de la letra cuando se posa el cursor*/
+}
 
 .foto {
     
@@ -93,4 +98,7 @@ header{
     border-color:rgb(135, 153, 255)
 
 }
-
+.conteiner{
+    display: flex;
+    justify-content: center;/*aliñamos el video en el centro*/
+}
