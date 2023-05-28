@@ -2,7 +2,7 @@ body {
     font-size: 1.5rem;
     padding: .8rem;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed; si queres que el fondo quede fijo descomenta esta propiedad*/
     background-position: center ;
     background-size: cover;
     background-image: url(./IMG/huellitas.jpg)
@@ -80,15 +80,14 @@ header{
 .nav:hover{
     transition:0.3s;
     display: inline-block;
-    background-color: aliceblue;
+    text-decoration: underline; /* para que te aparesca el surrayado */
     border-radius: 15px;
-    
 }
 
 
 .foto {
     
-    
+    border-radius: 15px;
     border-width: 10px;
     border-style: solid;
     border-color:rgb(135, 153, 255)

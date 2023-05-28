@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="img/iconos/favicon.ico" type="image/x-icon">
+    <title> La Indumentaria</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-menubar">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <ul id="lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Catalogo.html">Catalogo</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburguer"><i>☰</i></div>
+    </header>
+
+    <main>
+
+        <section id="cajacontacto">
+            <div class="contenedor-contacto">
+
+                <div class="item-contacto">
+                    <h2>VENI A VISITARNOS</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4815178678923!2d-58.451699299999994!3d-34.5666808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d01fac1b6f%3A0x193f15df5a169d41!2sAv.%20Cabildo%201562%2C%20C1426%20CABA!5e0!3m2!1ses-419!2sar!4v1682911024505!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="ubicacion">
+                        <p>Encontranos en Belgrano</p>
+                        <p> Av Cabildo 1562, CABA. Abiertos de Lunes a Sábados de 10hs a 18hs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-contacto">
+                    <h2 class="tag">ESCRIBINOS</h2>
+                    <form action="https://formspree.io/f/mjvzpjgb" id="form-contacto" method="post" class="form">
+                        <fieldset>
+                            <div class="input-container">
+                                <label  for="name">Nombre</label>
+                                <input name="name" id="name" class="input inputNombre" type="text" placeholder="Nombre" required data-tipo="nombre" title="el campo nombre no puede estar vacio">
+                                <span class="noMostrar" id="mensaje1">Error!!!El nombre debe comenzar con mayuscula</span>
+                            </div>
+                            <div class="input-container">
+                                <label  for="email">Email</label>
+                                <input name="email" id="email" class="input" type="email" placeholder="Email@ynlom.com" required data-tipo="email"  title="el campo email no puede estar vacio">
+                                
+                            </div>
+                            <div class="input-container">
+                                <label  for="phoneNumber">Número telefónico</label>
+                                <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="xxxx-xxxxxx" pattern="\d{10}" required  maxlength="11" data-tipo="numero" title="El formato requerido es XXXXXXXXXX 10 números">
+                                <span class="noMostrar" id="mensaje2">Error!!!El formato requerido son 10 numeros XXXXXXXXXX ,sin espacios</span>
+                            </div>
+                            <div class="input-container">
+                                <label for="">Ingrese sus dudas aqui</label>
+                                <textarea cols="25" rows="5"></textarea>
+                            </div>
+                        
+                            <div id="submit-button-container">
+                               <input id="submit-button" class="btn primary full" type="submit" value="Enviar mensaje">
+                            </div>
+                        </fieldset>
+                        
+                    </form>
+                </div>
+        </section>
+
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+
+
+        <div class="cajacontacto">
+
+            <p class="titulofooter">CONTACTANOS</p>
+            <img class="iconos" src="img/iconos/telefono.png" alt="">
+            <p> 47837935 / CEL: 1164895861</p>
+            <br>
+            <img class="iconos" src="img/iconos/email.png" alt="">
+            <p> laindumentaria@gmail.com</p>
+            <br>
+            <img class="iconos" src="img/iconos/ubicacion.png" alt="">
+            <p> Av Cabildo 1562, CABA </p>
+
+
+        </div>
+
+        <div class="cajaiconos">
+            <p class="titulofooter">REDES </p>
+            <a href="#"><img class="iconospie" src="img/iconos/instagram.png " alt=""></a>
+            <a href="#"><img class="iconospie" src="img/iconos/twitter.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="./script/inputValidar.js"></script>
+    
+</body>
+
+</html>
