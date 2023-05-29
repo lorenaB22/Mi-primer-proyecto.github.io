@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugios</title>
+
+
+</head>
+
+<body>
+    <style>
+        
+        body{
+             
+        font-size: 1.5rem;    
+        padding: .8rem;
+        background-image:  linear-gradient(rgba(0, 0, 255, 0.05),
+         rgba(0, 255, 106, 0.05)),url(Imagenes/cat-paw.jpg)
+          }
+header{
+    background-color: rgb(192, 149, 174);
+    padding-top: 10px;
+}
+
+#logo{
+    transition: 0.3s;
+    position: static;
+    display: inline-block;
+    margin: 15px;
+}
+
+#logo:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.nav{
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 15px;
+}
+a:hover{
+    color: rgb(238, 148, 148);
+    text-decoration: underline;
+    background-color: aliceblue;
+}
+ul{
+    list-style-type:initial
+    
+}
+ul a:hover{
+transition: 0.3s;    
+color:red;
+background-color:beige;
+}
+.nav:hover{
+    transition: 0.3s;
+    display: inline-block;
+    color: rgb(238, 148, 148);
+
+}
+          p{width:50%;
+         //border:1px solid black;
+         margin-top:-20px;
+         font-size: 1.5rem;
+         padding: 10px;
+         line-height:1.3em;
+        }
+       .galeria-imagenes{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        max-width: 50rem;
+        margin-inline: auto;
+           }   
+       .galeria-imagenes > img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        transition: scale 350ms ease, opacity 350ms linear;
+        }
+        .galeria-imagenes:has(img:hover)  img:not(:hover) {
+          scale: 0.8;
+          opacity: 0.8;
+        }    
+    .contenedor{
+        margin-inline: auto;
+    }
+    
+    </style>
+<header id="header">
+    <h1>ADOPTAME.COM</h1>
+        <nav>
+        <a id="logo" href="index.html"><img src="Imagenes/4c965a28f1760097c4797e62315558f3.jpg" alt="logo" width="100px"></a>
+        <a class="nav" href="Quienessomos.html">Nosotros</a>
+        <a class="nav" href="Perros.html">Perros</a>
+        <a class="nav" href="Gatos.html">Gatos</a>
+        <a class="nav" href="Refugios.html">Refugios</a>
+        <a class="nav" href="Nosotros.html">Contacto</a>
+        </nav>
+
+</header>
+<main>
+<h2>REFUGIOS</h2>
+    
+    
+    <h3>Nuestras actividades</h3>
+    <p>Damos refugio a los animalitos que a veces nos llegan en muy mala condición. Les brindamos entonces todos los cuidados básicos que necesitan para que se recuperen
+         dándoles alimento, cuidados veterinarios y limpieza
+          hasta tanto tengan una nueva casa.
+    <h3>Nos Proponemos</h3>
+    <p>Nos proponemos buscarles un nuevo hogar y
+       que formen parte de una familia. 
+       Se entregan óptimos o con diagnóstico:
+       desparasitados, castrados y/o vacunados,
+       con pipeta o talco antipulgas. Posteriormente 
+    continuamos en contacto con los adoptantes acompañandolos
+    en el seguimiento.
+ </p>
+        <h3>Algunos de nosotros</h3>
+    <div class="contenedor">
+        <ul>
+            <li><a href="https://www.elcampitorefugio.org/index.php" target="_blank">Refugio El Campito</a></li>
+            <li><a href="https://www.proyecto4patas.org/" target="_blank">Proyecto 4 Patas</a></li>
+            <li><a href="https://www.instagram.com/huellitascomuna12/?hl=es" target="_blank">Huellitas Comuna 12</a></li>
+            <li><a href="https://www.instagram.com/gatitosdevillapueyrredon/?hl=es" target="_blank">Gatitos de Villa Pueyrredón</a></li>
+
+                <li><a href="https://www.facebook.com/refugiolasrenatas/?locale=es_LA" target="_blank">Refugio Las Renatas</a></li>
+                <li><a href="https://www.instagram.com/perrosconcalle/?hl=es" target="_blank">Perros con calle</a></li>
+                <li><a href="https://www.facebook.com/Gatitos.Sarmiento/?locale=es_LA" target="_blank">Gatitos de la Sarmiento</a></li>
+    
+        </ul> 
+    </div>
+    <div class="galeria-imagenes">
+        <img src="Imagenes/P1.jpg" alt="">
+        <img src="Imagenes/R1.jpg" alt="">
+        <img src="Imagenes/G1.jpg" alt="">
+        <img src="Imagenes/G-portobello.jpg"  alt="">
+        <img src="Imagenes/G2.jpg" alt="">
+        <img src="Imagenes/R2.jpg" alt="">
+    </div>
+</main>
+<footer></footer>           
+</body>
+</html>
